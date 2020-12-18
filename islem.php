@@ -8,7 +8,7 @@ $jsonDosya=fopen("./YapılacaklarListesi/".$jsonKayıtEtme->id.".json","w+");
 fwrite($jsonDosya,json_encode($jsonKayıtEtme));
 fclose($jsonDosya);
 
-header("Location:anasayfa.php");
+header("Location:index.php");
 function rastgeleAnahtar(){
     $karakterler="1234567890abcdefghijKLMNOPQRSTuvwxyzABCDEFGHIJklmnopqrstUVWXYZ0987654321";
     $sifre="";
